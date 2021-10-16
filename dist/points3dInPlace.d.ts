@@ -1,0 +1,11 @@
+import { Point3D } from "./points3d";
+import { Size } from "./sizes";
+export declare function multiplyPoint(thePoint: Point3D, amount: number): Point3D;
+export declare function dividePoint(thePoint: Point3D, amount: number): Point3D;
+export declare function dividePoints(mainPoint: Point3D, otherPoint: Point3D): Point3D;
+export declare function addPoints(mainPoint: Point3D, otherPoint: Point3D): Point3D;
+export declare function subtractPoints(mainPoint: Point3D, otherPoint: Point3D): Point3D;
+export declare function subtractPointsSafer(mainPoint: Point3D, otherPoint: Point3D): Point3D;
+export declare function subtractSizeFromPoint(mainPoint: Point3D, otherSize: Size): Point3D;
+export declare function interpolatePoints(currentPoint: Point3D, previousValue: Point3D, percentOfCurrent: number): Point3D;
+export declare function getPointsCenter(pointA: Point3D, pointB: Point3D): Point3D;

@@ -1,3 +1,7 @@
+v0.3.2
+
+- includes dist folder so no installing needed
+
 v0.3.0
 
 - moving to package :)
