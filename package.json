@@ -1,6 +1,6 @@
 {
-  "name": "shutils",
-  "version": "0.3.2",
+  "name": "chootils",
+  "version": "0.3.3",
   "description": "utils for looping and positions and games",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HugoMcPhee/shutils.git"
+    "url": "git+https://github.com/HugoMcPhee/chootils.git"
   },
   "keywords": [],
   "author": "Hugo McPhee",

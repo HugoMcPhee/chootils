@@ -1,3 +1,7 @@
+v0.3.3
+
+- renamed to chootils
+
 v0.3.2
 
 - includes dist folder so no installing needed
