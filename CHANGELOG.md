@@ -1,3 +1,11 @@
+todo
+
+- rename ReactRef type to ElementOrNull
+
+v0.3.4
+
+- added clearTimeoutSafe
+
 v0.3.3
 
 - renamed to chootils
