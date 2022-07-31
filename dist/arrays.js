@@ -144,3 +144,13 @@ export function chooseClosestBeforeItemInArray({ smallArray, fullArray, goalItem
     // if none was found, use the first item in theArray
     return foundItem;
 }
+// filters and maps in one loop
+export function filterMap(array, changeOrCheckFunc) {
+    let newArray = [];
+    forEach(array, (item) => {
+        const mappedItem = changeOrCheckFunc(item);
+        if (mappedItem)
+            newArray.push(mappedItem);
+    });
+    return newArray;
+}

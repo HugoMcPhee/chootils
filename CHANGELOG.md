@@ -2,6 +2,11 @@ todo
 
 - rename ReactRef type to ElementOrNull
 
+v0.3.5
+
+- added type for addItemToUniqueArray
+- added filterMap function
+
 v0.3.4
 
 - added clearTimeoutSafe

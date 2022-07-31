@@ -1,4 +1,5 @@
 import { interpolateValues, shortenDecimals } from "./numbers";
+// TODO defaltPoint or zeroPoint
 export function defaultPosition(partialPoints) {
     if (!partialPoints) {
         return { x: 0, y: 0, z: 0 };

@@ -3,6 +3,7 @@ import { Size } from "./sizes";
 
 export type Point3D = { x: number; y: number; z: number };
 
+// TODO defaltPoint or zeroPoint
 export function defaultPosition(partialPoints?: Partial<Point3D>): Point3D {
   if (!partialPoints) {
     return { x: 0, y: 0, z: 0 };

@@ -1,7 +1,7 @@
 export declare function limitArrayLength(theArray: any[], limit: number): void;
 export declare function addToLimitedArray(theArray: any[], newItem: any, limit: number): void;
 export declare function getUniqueArrayItems<T_ArrayItem>(theArray: T_ArrayItem[] | readonly T_ArrayItem[]): T_ArrayItem[];
-export declare function addItemToUniqueArray(theArray: any[], newItem: any): any[];
+export declare function addItemToUniqueArray<T_ArrayItem extends any>(theArray: T_ArrayItem[] | readonly T_ArrayItem[], newItem: T_ArrayItem): T_ArrayItem[];
 export declare function mergeIntoArray(theArray: any, newArray: any): void;
 export declare function removeItemFromArray<T_ArrayItem>(theArray: T_ArrayItem[], theItem: T_ArrayItem): T_ArrayItem[];
 export declare function removeItemFromArrayInPlace<T_ArrayItem>(theArray: T_ArrayItem[], theItem: T_ArrayItem): T_ArrayItem[];
@@ -18,3 +18,4 @@ export declare function chooseClosestBeforeItemInArray<T_ArrayItem extends any, 
     fullArray: T_FullArray;
     goalItem: T_GoalItem;
 }): T_GoalItem;
+export declare function filterMap<T_ArrayItem extends any, T_NewArrayItem>(array: T_ArrayItem[], changeOrCheckFunc: (item: T_ArrayItem) => T_NewArrayItem | false | undefined): T_NewArrayItem[];

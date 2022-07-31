@@ -20,7 +20,10 @@ export function getUniqueArrayItems<T_ArrayItem>(
   return [...new Set(theArray)];
 }
 
-export function addItemToUniqueArray(theArray: any[], newItem: any) {
+export function addItemToUniqueArray<T_ArrayItem extends any>(
+  theArray: T_ArrayItem[] | readonly T_ArrayItem[],
+  newItem: T_ArrayItem
+) {
   const newArray = theArray.slice(0);
   newArray.push(newItem);
   return getUniqueArrayItems(newArray);
@@ -204,4 +207,17 @@ export function chooseClosestBeforeItemInArray<
   // if none was found, use the first item in theArray
 
   return foundItem as T_GoalItem;
+}
+
+// filters and maps in one loop
+export function filterMap<T_ArrayItem extends any, T_NewArrayItem>(
+  array: T_ArrayItem[],
+  changeOrCheckFunc: (item: T_ArrayItem) => T_NewArrayItem | false | undefined
+) {
+  let newArray: T_NewArrayItem[] = [];
+  forEach(array, (item) => {
+    const mappedItem = changeOrCheckFunc(item);
+    if (mappedItem) newArray.push(mappedItem);
+  });
+  return newArray;
 }
