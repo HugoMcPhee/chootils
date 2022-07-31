@@ -19,3 +19,4 @@ export declare function chooseClosestBeforeItemInArray<T_ArrayItem extends any, 
     goalItem: T_GoalItem;
 }): T_GoalItem;
 export declare function filterMap<T_ArrayItem extends any, T_NewArrayItem>(array: T_ArrayItem[], changeOrCheckFunc: (item: T_ArrayItem) => T_NewArrayItem | false | undefined): T_NewArrayItem[];
+export declare function fastFilter<T_ArrayItem extends any>(array: T_ArrayItem[], filterFunc: (item: T_ArrayItem) => boolean | undefined | null): T_ArrayItem[];

@@ -154,3 +154,11 @@ export function filterMap(array, changeOrCheckFunc) {
     });
     return newArray;
 }
+export function fastFilter(array, filterFunc) {
+    let filteredItems = [];
+    forEach(array, (item) => {
+        if (filterFunc(item))
+            filteredItems.push(item);
+    });
+    return filteredItems;
+}

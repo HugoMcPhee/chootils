@@ -2,6 +2,10 @@ todo
 
 - rename ReactRef type to ElementOrNull
 
+v0.3.6
+
+- added fastFilter function
+
 v0.3.5
 
 - added type for addItemToUniqueArray

@@ -221,3 +221,14 @@ export function filterMap<T_ArrayItem extends any, T_NewArrayItem>(
   });
   return newArray;
 }
+
+export function fastFilter<T_ArrayItem extends any>(
+  array: T_ArrayItem[],
+  filterFunc: (item: T_ArrayItem) => boolean | undefined | null
+) {
+  let filteredItems: T_ArrayItem[] = [];
+  forEach(array, (item) => {
+    if (filterFunc(item)) filteredItems.push(item);
+  });
+  return filteredItems;
+}
