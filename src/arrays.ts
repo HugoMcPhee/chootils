@@ -1,4 +1,5 @@
 import { breakableForEach, forEach } from "./loops";
+import { getRandomInt } from "./numbers";
 
 export function limitArrayLength(theArray: any[], limit: number) {
   if (theArray.length > limit) {
@@ -231,4 +232,12 @@ export function fastFilter<T_ArrayItem extends any>(
     if (filterFunc(item)) filteredItems.push(item);
   });
   return filteredItems;
+}
+
+export function chooseRandom<T_Item extends any>(array: T_Item[]) {
+  return array[getRandomInt(0, array.length - 1)];
+}
+
+export function includes(list: any[] | string, item: any) {
+  return list.indexOf(item) > -1;
 }

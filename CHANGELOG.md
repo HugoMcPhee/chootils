@@ -2,6 +2,11 @@ todo
 
 - rename ReactRef type to ElementOrNull
 
+v0.3.7
+
+- getRandomInt's max is now inclusive
+- added chooseRandom and includes helpers
+
 v0.3.6
 
 - added fastFilter function
