@@ -6,6 +6,7 @@ export declare type Point3D = {
 };
 export declare function defaultPosition(partialPoints?: Partial<Point3D>): Point3D;
 export declare function pointIsZero(thePoint: Point3D): boolean;
+export declare function pointBasicallyZero(thePoint: Point3D, lowestAmount?: number): boolean;
 export declare function samePoints(pointA: Point3D, pointB: Point3D): boolean;
 export declare function copyPoint(thePoint: Point3D): Point3D;
 export declare function multiplyPoint(thePoint: Point3D, amount: number): Point3D;

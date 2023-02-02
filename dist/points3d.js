@@ -9,6 +9,11 @@ export function defaultPosition(partialPoints) {
 export function pointIsZero(thePoint) {
     return thePoint.x === 0 && thePoint.y === 0 && thePoint.z === 0;
 }
+export function pointBasicallyZero(thePoint, lowestAmount = 0.00001) {
+    return (Math.abs(thePoint.x) < lowestAmount &&
+        Math.abs(thePoint.y) < lowestAmount &&
+        Math.abs(thePoint.z) < lowestAmount);
+}
 export function samePoints(pointA, pointB) {
     return (pointA.x === pointB.x && pointA.y === pointB.y && pointA.z === pointB.z);
 }

@@ -15,6 +15,12 @@ export function pointIsZero(thePoint: Point2D) {
   return thePoint.x === 0 && thePoint.y === 0;
 }
 
+export function pointBasicallyZero(thePoint: Point2D, lowestAmount = 0.00001) {
+  return (
+    Math.abs(thePoint.x) < lowestAmount && Math.abs(thePoint.y) < lowestAmount
+  );
+}
+
 export function samePoints(pointA: Point2D, pointB: Point2D): boolean {
   return pointA.x === pointB.x && pointA.y === pointB.y;
 }

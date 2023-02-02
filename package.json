@@ -1,6 +1,6 @@
 {
   "name": "chootils",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "utils for looping and positions and games",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
