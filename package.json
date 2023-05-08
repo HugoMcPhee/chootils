@@ -1,9 +1,10 @@
 {
   "name": "chootils",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "utils for looping and positions and games",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "files": [
     "dist"
   ],

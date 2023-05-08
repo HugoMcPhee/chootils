@@ -2,6 +2,9 @@ todo
 
 - rename ReactRef type to ElementOrNull
 
+v0.3.9
+updated to work in nodejs
+
 v0.3.7
 
 - getRandomInt's max is now inclusive
