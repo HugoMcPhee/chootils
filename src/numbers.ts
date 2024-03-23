@@ -51,6 +51,7 @@ export function interpolateValues(
   return currentValue * percentOfCurrent + previousValue * percentOfPrevious;
 }
 
+// NOTE maybe rename to limitToRange
 export function minMaxRange(number: number, min: number, max: number) {
   return Math.min(Math.max(number, min), max);
 }
